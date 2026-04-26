@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MusicPlayer" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- MediaRouteButton reads android:colorBackground to compute contrast.
+             android:Theme.Material.Light.NoActionBar does not expose it as a direct
+             color to TypedArray.getColor(), returning 0 (transparent) and crashing.
+             Explicit value fixes this. -->
+        <item name="android:colorBackground">#FFFAFAFA</item>
+    </style>
+</resources>

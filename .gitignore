@@ -1,0 +1,40 @@
+# Claude Code local settings
+.claude/
+
+# Built outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+build/
+app/build/
+
+# Gradle
+.gradle/
+gradle/wrapper/gradle-wrapper.jar
+build_output.txt
+install_output.txt
+
+# Local config (contains SDK paths — machine-specific)
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+*.class
+*.kotlin_module
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

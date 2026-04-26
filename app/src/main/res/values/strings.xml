@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="notification_channel_name">Music Playback</string>
+    <string name="notification_channel_desc">Shows current playback track</string>
+    <string name="permission_rationale">Storage access is required to scan your music library.</string>
+    <string name="permission_denied">Permission denied. Enable storage access in Settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="tab_songs">Songs</string>
+    <string name="tab_albums">Albums</string>
+    <string name="tab_artists">Artists</string>
+    <string name="tab_genres">Genres</string>
+    <string name="tab_playlists">Playlists</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="search_hint">Search songs, albums, artists…</string>
+    <string name="no_songs_found">No songs found</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="create_playlist">Create playlist</string>
+    <string name="playlist_name_hint">Playlist name</string>
+    <string name="widget_small_description">Compact music controls (3×1)</string>
+    <string name="widget_standard_description">Music player with album art (4×2)</string>
+</resources>

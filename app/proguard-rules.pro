@@ -1,0 +1,4 @@
+-keepattributes SourceFile,LineNumberTable
+-keep class com.example.musicplayer.domain.model.** { *; }
+-keep class androidx.media3.** { *; }
+-dontwarn androidx.media3.**
