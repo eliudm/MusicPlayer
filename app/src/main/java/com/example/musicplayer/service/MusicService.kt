@@ -106,6 +106,17 @@ class MusicService : MediaLibraryService() {
     override fun onGetSession(controllerInfo: MediaSession.ControllerInfo): MediaLibrarySession =
         mediaSession
 
+    override fun onTaskRemoved(rootIntent: Intent?) {
+        playerController.activePlayer.stop()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            stopForeground(STOP_FOREGROUND_REMOVE)
+        } else {
+            @Suppress("DEPRECATION")
+            stopForeground(true)
+        }
+        stopSelf()
+    }
+
     override fun onDestroy() {
         unregisterReceiver(noisyReceiver)
         serviceScope.cancel()
